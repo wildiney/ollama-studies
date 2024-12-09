@@ -20,6 +20,7 @@ curl http://localhost:11434/api/generate -d '{
 curl http://localhost:11434/api/chat -d '{
   "model": "llama3.2",
   "messages": [{"role": "user","content":"tell me something fun" }],
+  "format": "json",
   "stream": false
   }'
 ```

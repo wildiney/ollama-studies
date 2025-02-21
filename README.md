@@ -3,7 +3,15 @@
 ## Creating the custom model
 
 ```shell
-ollama create sky -f ./Modelfile
+ollama create sky -f ./Sky.Modelfile
+```
+
+### Create inside a ollama docker
+
+```shell
+docker cp Sky.ModelFile ollama:/Sky.ModelFile
+docker exec -it ollama bash
+ollama create sky -f /Sky.ModelFile
 ```
 
 ## API

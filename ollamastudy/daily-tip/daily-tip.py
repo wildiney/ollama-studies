@@ -20,4 +20,4 @@ if response.status_code == 200:
             generated_text = result.get("response", "")
             print(generated_text, end="", flush=True)
 else:
-    print("Ërror", response.status_code, response.text)
+    print("Error", response.status_code, response.text)
